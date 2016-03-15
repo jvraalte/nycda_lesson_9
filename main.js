@@ -44,22 +44,20 @@ function startTime() {
 		ms = ms;
 
 	function isOdd(num) {
-		return num % 2;
+		return m % 2;
 	};
 	console.log(isOdd(m));
 
+	isOdd(m);
+
 	if (isOdd(1)) {
 		document.body.style.backgroundColor = "black";
+	} else {
+		document.body.style.backgroundColor = "red";
 	};
 
 	document.getElementById('Amsterdam').innerHTML = h + ":" + m + ":" + s + ":" + ms;	
 	var t = setTimeout(startTime, 200);
-
-
-
-
-
-/*console.log(h + ":" + m + ":" + s + ":" + ms);	*/
 
 };
 
