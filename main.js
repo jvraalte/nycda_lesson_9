@@ -25,15 +25,12 @@ function startTime() {
 	if (h < 10){
 		h = "0" + h;
 	}
-
 	if (m < 10){
 		m = "0" + m;
 	}
-
 	if (s < 10) {
 		s = "0" + s;
 	}	
-
 	if (ms < 100) {
 		ms = "0" + ms;
 	} 
@@ -46,8 +43,7 @@ function startTime() {
 	function isOdd(num) {
 		return m % 2;
 	};
-	console.log(isOdd(m));
-
+/*	console.log(isOdd(m));*/
 	isOdd(m);
 
 	if (isOdd(1)) {
@@ -56,6 +52,41 @@ function startTime() {
 		document.body.style.backgroundColor = "red";
 	};
 
+	
+/*	setInterval(function() {
+		function getRandomColor() {
+			var letters = '0123456789ABCDEF'.split('');
+			var color = '#';
+			for (var i = 0; i < 6; i++ ) {
+				color += letters[Math.floor(Math.random() * 16)];
+			}
+			return color;
+		}
+		getRandomColor("body.backgroundColor");	
+	}, 5 * 1000); */
+
+/*	function changecolors() {
+		s = 1;
+		setInterval(change, 300 * 1000);
+	}
+
+	function change() {
+		if (s === 1) {
+			color = function getRandomColor() {
+				var letters = '0123456789ABCDEF'.split('');
+				var color = '#';
+				for (var i = 0; i < 6; i++ ) {
+					color += letters[Math.floor(Math.random() * 16)];
+				};
+				return color;
+			};
+			getRandomColor("body");	
+			document.body.style.background = color;
+		};
+	};
+	changecolors();
+	change();
+*/
 	document.getElementById('Amsterdam').innerHTML = h + ":" + m + ":" + s + ":" + ms;	
 	var t = setTimeout(startTime, 200);
 
