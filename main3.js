@@ -5,6 +5,10 @@ Using the clock that we just created...*/
 /*1. Change the color to black if it is an odd minute and another color if it is even minute. (The 'modulus' operator might be useful here:
 http://www.w3schools.com/js/js_operators.asp (Links naar een externe site.)).*/
 
+/*2. Change the background to a random color every 5 minutes.*/
+
+/*3. Change the text color to a different color of the clock every hour, selected from an array of colors.*/
+
 function startTime() {
 	var x = new Date();
 	var h = x.getHours();
@@ -63,7 +67,3 @@ function startTime() {
 };
 
 startTime();
-
-/*2. Change the background to a random color every 5 minutes.*/
-
-/*3. Change the text color to a different color of the clock every hour, selected from an array of colors.*/

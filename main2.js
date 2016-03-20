@@ -31,13 +31,13 @@ function startTime() {
 	};
 
 	function isOdd() {
-		return s % 2;
+		return s % 5;
 	};
 /*	console.log(isOdd(m));*/
 /*	isOdd();*/
 
 	if (isOdd()) {
-		document.body.style.backgroundColor = "black";	
+
 /*		console.log((isOdd(1)));*/
 	} else {
 /*		console.log("hello")*/
@@ -65,5 +65,8 @@ function startTime() {
 startTime();
 
 /*2. Change the background to a random color every 5 minutes.*/
+
+
+
 
 /*3. Change the text color to a different color of the clock every hour, selected from an array of colors.*/
