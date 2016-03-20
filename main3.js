@@ -50,9 +50,9 @@ function startTime() {
 			for (var i = 0; i < 1; i++ ) {
 				color += letters[Math.floor(Math.random() * 5)];
 			}
-			return document.body.style.backgroundColor = color;
+			return document.getElementById('Amsterdam').style.color = color;
 		}
-		getRandomColor("body.backgroundColor");	
+		getRandomColor("getElementById('Amsterdam').color");	
 	};
 
 
