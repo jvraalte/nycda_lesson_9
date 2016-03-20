@@ -41,20 +41,20 @@ function startTime() {
 /*	isOdd();*/
 
 	if (isOdd()) {
-		document.body.style.backgroundColor = "black";	
 /*		console.log((isOdd(1)));*/
 	} else {
 /*		console.log("hello")*/
 		function getRandomColor() {
-			var letters = '0123456789ABCDEF'.split('');
+			var letters = ["ff0000", "00ff00", "0000cc", "9900cc", "ff6600"];
 			var color = '#';
-			for (var i = 0; i < 6; i++ ) {
-				color += letters[Math.floor(Math.random() * 16)];
+			for (var i = 0; i < 1; i++ ) {
+				color += letters[Math.floor(Math.random() * 5)];
 			}
 			return document.body.style.backgroundColor = color;
 		}
 		getRandomColor("body.backgroundColor");	
 	};
+
 
 	
 	setInterval(function() {
